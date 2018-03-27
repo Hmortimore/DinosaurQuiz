@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.hmortimore.dinosaurquiz.MainActivity">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="gotham-bold"
+                        android:text="Welcome to the Dinosaur Quiz"
+                        android:textSize="28dp"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="28dp"
+                        android:layout_marginBottom="28dp"
+                        android:hint="               Name                    "/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="When did dinosaurs become extinct?"
+                        android:textSize="20dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="15dp"/>
+                    <RadioGroup
+                        android:id="@+id/q1RadioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="25dp">
+                        <RadioButton
+                            android:id="@+id/q1RadioButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="8dp"
+                            android:text="6,000 years ago"
+                            android:textSize="16sp" />
+                        <RadioButton
+                            android:id="@+id/q1RadioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="8dp"
+                            android:text="6.5 billion years ago"
+                            android:textSize="16sp" />
+                        <RadioButton
+                            android:id="@+id/q1RadioButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="8dp"
+                            android:text="5 million years ago"
+                            android:textSize="16sp" />
+                        <RadioButton
+                            android:id="@+id/q1RadioButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="8dp"
+                            android:text="65 million years ago"
+                            android:textSize="16sp" />
+                    </RadioGroup>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="When did dinosaurs become extinct?"
+                        android:textSize="20dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="15dp"/>
+                    <RadioGroup
+                        android:id="@+id/q2RadioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="25dp">
+                        <RadioButton
+                            android:id="@+id/q2RadioButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="8dp"
+                            android:text="6,000 years ago"
+                            android:textSize="16sp" />
+                        <RadioButton
+                            android:id="@+id/q2RadioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="8dp"
+                            android:text="6.5 billion years ago"
+                            android:textSize="16sp" />
+                        <RadioButton
+                            android:id="@+id/q2RadioButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="8dp"
+                            android:text="5 million years ago"
+                            android:textSize="16sp" />
+                        <RadioButton
+                            android:id="@+id/q2RadioButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="8dp"
+                            android:text="65 million years ago"
+                            android:textSize="16sp" />
+                    </RadioGroup>
+                </LinearLayout>
+ </ScrollView>
