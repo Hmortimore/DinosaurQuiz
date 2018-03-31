@@ -1,120 +1,297 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.hmortimore.dinosaurquiz.MainActivity">
 
-                <LinearLayout
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="gotham-bold"
+            android:paddingBottom="10dp"
+            android:text="The Dinosaur Quiz"
+            android:textSize="28dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="28dp"
+            android:hint="Name"
+            android:inputType="text"
+            android:paddingLeft="28dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="15dp"
+            android:text="When did dinosaurs become extinct?"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:id="@+id/q1RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp">
+
+            <RadioButton
+                android:id="@+id/q1RadioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="6,000 years ago"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/q1RadioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="6.5 billion years ago"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/q1RadioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="5 million years ago"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/q1RadioButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="65 million years ago"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="What is the largest dinosaur ever discovered?"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:id="@+id/q2RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp">
+
+            <RadioButton
+                android:id="@+id/q2RadioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="Brontosaurus"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/q2RadioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="Tyrannosaurus Rex"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/q2RadioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="Giraffatitan"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/q2RadioButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="Argentinosaurus"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Which of these dinosaurs was a meat eater?"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:id="@+id/q3RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp">
+
+            <RadioButton
+                android:id="@+id/q3RadioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="Stegasaurus"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/q3RadioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="Triceratops"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/q3RadioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="Spinosaurus"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/q3RadioButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:text="Apatosaurus"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="True or False: All dinosaurs laid eggs"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:id="@+id/q4RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/q4RadioButton1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="left"
-                    android:orientation="vertical">
+                    android:paddingLeft="8dp"
+                    android:text="True"
+                    android:textSize="16sp" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="gotham-bold"
-                        android:text="Welcome to the Dinosaur Quiz"
-                        android:textSize="28dp"
-                        android:layout_gravity="center_horizontal"
-                        android:paddingBottom="10dp"
-                        android:paddingTop="10dp"/>
+                <RadioButton
+                    android:id="@+id/q4RadioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:paddingLeft="8dp"
+                    android:text="False"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RadioGroup>
 
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:paddingLeft="28dp"
-                        android:layout_marginBottom="28dp"
-                        android:hint="               Name                    "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Which of these dinosaurs was a meat eater?"
+            android:textSize="20dp" />
 
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:horizontalSpacing="0dp"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="0dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="When did dinosaurs become extinct?"
-                        android:textSize="20dp"
-                        android:layout_marginBottom="8dp"
-                        android:layout_marginLeft="15dp"/>
-                    <RadioGroup
-                        android:id="@+id/q1RadioGroup"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="25dp">
-                        <RadioButton
-                            android:id="@+id/q1RadioButton1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="8dp"
-                            android:text="6,000 years ago"
-                            android:textSize="16sp" />
-                        <RadioButton
-                            android:id="@+id/q1RadioButton2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="8dp"
-                            android:text="6.5 billion years ago"
-                            android:textSize="16sp" />
-                        <RadioButton
-                            android:id="@+id/q1RadioButton3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="8dp"
-                            android:text="5 million years ago"
-                            android:textSize="16sp" />
-                        <RadioButton
-                            android:id="@+id/q1RadioButton4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="8dp"
-                            android:text="65 million years ago"
-                            android:textSize="16sp" />
-                    </RadioGroup>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="15dp"
-                        android:text="What is the largest dinosaur ever discovered?"
-                        android:textSize="20dp"
-                        android:layout_marginBottom="8dp"
-                        android:layout_marginLeft="15dp"/>
-                    <RadioGroup
-                        android:id="@+id/q2RadioGroup"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="25dp">
-                        <RadioButton
-                            android:id="@+id/q2RadioButton1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="8dp"
-                            android:text="Brontosaurus"
-                            android:textSize="16sp" />
-                        <RadioButton
-                            android:id="@+id/q2RadioButton2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="8dp"
-                            android:text="Tyrannosaurus Rex"
-                            android:textSize="16sp" />
-                        <RadioButton
-                            android:id="@+id/q2RadioButton3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="8dp"
-                            android:text="Giraffatitan"
-                            android:textSize="16sp" />
-                        <RadioButton
-                            android:id="@+id/q2RadioButton4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="8dp"
-                            android:text="Argentinosaurus"
-                            android:textSize="16sp" />
-                    </RadioGroup>
-                </LinearLayout>
- </ScrollView>
+            <TextView
+                android:id="@+id/q5Image1"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/stegosaurus"
+                android:padding="2dp"
+                android:paddingLeft="8dp"
+                android:text="Stegasaurus"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/q5Image2"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/triceratops"
+                android:padding="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="Triceratops"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp" />
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="6dp"
+            android:horizontalSpacing="0dp"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="0dp">
+
+            <TextView
+                android:id="@+id/q5Image3"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/spinosaurus"
+                android:padding="2dp"
+                android:paddingLeft="8dp"
+                android:text="Spinosaurus"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/q5Image4"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/apatosaurus"
+                android:padding="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="Apatosaurus"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp" />
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>
