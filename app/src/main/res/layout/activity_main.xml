@@ -1,32 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:theme="@style/AppTheme"
     tools:context="com.hmortimore.dinosaurquiz.MainActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:fontFamily="gotham-bold"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/creepster"
+            android:gravity="center_horizontal"
             android:paddingBottom="10dp"
             android:text="The Dinosaur Quiz"
-            android:textSize="28dp" />
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="38dp"
+            app:fontFamily="@font/creepster" />
+
+       <!-- <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"/>-->
 
         <EditText
-            android:layout_width="match_parent"
+            android:id="@+id/playerName"
+            android:layout_width="335dp"
+            android:layout_marginLeft="15dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:layout_marginBottom="28dp"
-            android:hint="Name"
+            android:hint="Player Name"
             android:inputType="text"
             android:paddingLeft="28dp" />
 
@@ -50,7 +60,9 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="8dp"
                 android:text="6,000 years ago"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:onClick="onRadioButtonInQ1Clicked"/>
 
             <RadioButton
                 android:id="@+id/q1RadioButton2"
@@ -58,7 +70,9 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="8dp"
                 android:text="6.5 billion years ago"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:onClick="onRadioButtonInQ1Clicked"/>
 
             <RadioButton
                 android:id="@+id/q1RadioButton3"
@@ -66,7 +80,9 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="8dp"
                 android:text="5 million years ago"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:onClick="onRadioButtonInQ1Clicked"/>
 
             <RadioButton
                 android:id="@+id/q1RadioButton4"
@@ -74,7 +90,9 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="8dp"
                 android:text="65 million years ago"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:onClick="onRadioButtonInQ1Clicked"/>
         </RadioGroup>
 
         <TextView
@@ -84,7 +102,7 @@
             android:layout_marginLeft="15dp"
             android:layout_marginTop="15dp"
             android:text="What is the largest dinosaur ever discovered?"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <RadioGroup
             android:id="@+id/q2RadioGroup"
@@ -98,7 +116,8 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="8dp"
                 android:text="Brontosaurus"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:onClick="onRadioButtonInQ2Clicked"/>
 
             <RadioButton
                 android:id="@+id/q2RadioButton2"
@@ -106,7 +125,8 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="8dp"
                 android:text="Tyrannosaurus Rex"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:onClick="onRadioButtonInQ2Clicked"/>
 
             <RadioButton
                 android:id="@+id/q2RadioButton3"
@@ -114,7 +134,8 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="8dp"
                 android:text="Giraffatitan"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:onClick="onRadioButtonInQ2Clicked"/>
 
             <RadioButton
                 android:id="@+id/q2RadioButton4"
@@ -122,8 +143,10 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="8dp"
                 android:text="Argentinosaurus"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:onClick="onRadioButtonInQ2Clicked"/>
         </RadioGroup>
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -131,59 +154,11 @@
             android:layout_marginBottom="8dp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="15dp"
-            android:text="Which of these dinosaurs was a meat eater?"
+            android:text="All dinosaurs laid eggs"
             android:textSize="20dp" />
 
         <RadioGroup
             android:id="@+id/q3RadioGroup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="25dp">
-
-            <RadioButton
-                android:id="@+id/q3RadioButton1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="8dp"
-                android:text="Stegasaurus"
-                android:textSize="16sp" />
-
-            <RadioButton
-                android:id="@+id/q3RadioButton2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="8dp"
-                android:text="Triceratops"
-                android:textSize="16sp" />
-
-            <RadioButton
-                android:id="@+id/q3RadioButton3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="8dp"
-                android:text="Spinosaurus"
-                android:textSize="16sp" />
-
-            <RadioButton
-                android:id="@+id/q3RadioButton4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="8dp"
-                android:text="Apatosaurus"
-                android:textSize="16sp" />
-        </RadioGroup>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="15dp"
-            android:text="True or False: All dinosaurs laid eggs"
-            android:textSize="20dp" />
-
-        <RadioGroup
-            android:id="@+id/q4RadioGroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp">
@@ -194,21 +169,23 @@
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:id="@+id/q4RadioButton1"
+                    android:id="@+id/q3RadioButton1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingLeft="8dp"
                     android:text="True"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:onClick="onRadioButtonInQ3Clicked"/>
 
                 <RadioButton
-                    android:id="@+id/q4RadioButton3"
+                    android:id="@+id/q3RadioButton3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="25dp"
                     android:paddingLeft="8dp"
                     android:text="False"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:onClick="onRadioButtonInQ3Clicked"/>
             </LinearLayout>
         </RadioGroup>
 
@@ -222,6 +199,7 @@
             android:textSize="20dp" />
 
         <GridLayout
+            android:id="@+id/q4GridLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -229,10 +207,11 @@
             android:horizontalSpacing="0dp"
             android:numColumns="2"
             android:stretchMode="columnWidth"
+            android:textColor="#000000"
             android:verticalSpacing="0dp">
 
-            <TextView
-                android:id="@+id/q5Image1"
+            <Button
+                android:id="@+id/q4Image1"
                 android:layout_width="190dp"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="8dp"
@@ -240,11 +219,12 @@
                 android:padding="2dp"
                 android:paddingLeft="8dp"
                 android:text="Stegasaurus"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="16sp" />
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:onClick="onRadioButtonInQ4Clicked"/>
 
-            <TextView
-                android:id="@+id/q5Image2"
+            <Button
+                android:id="@+id/q4Image2"
                 android:layout_width="190dp"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="8dp"
@@ -253,8 +233,9 @@
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
                 android:text="Triceratops"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="16sp" />
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:onClick="onRadioButtonInQ4Clicked"/>
         </GridLayout>
 
         <GridLayout
@@ -268,8 +249,8 @@
             android:stretchMode="columnWidth"
             android:verticalSpacing="0dp">
 
-            <TextView
-                android:id="@+id/q5Image3"
+            <Button
+                android:id="@+id/q4Image3"
                 android:layout_width="190dp"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="8dp"
@@ -277,11 +258,12 @@
                 android:padding="2dp"
                 android:paddingLeft="8dp"
                 android:text="Spinosaurus"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="16sp" />
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:onClick="onRadioButtonInQ4Clicked"/>
 
-            <TextView
-                android:id="@+id/q5Image4"
+            <Button
+                android:id="@+id/q4Image4"
                 android:layout_width="190dp"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="8dp"
@@ -290,8 +272,25 @@
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
                 android:text="Apatosaurus"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="16sp" />
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:onClick="onRadioButtonInQ4Clicked"/>
         </GridLayout>
+
+
+            <Button
+                android:id="@+id/resetQuiz"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:padding="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="20dp"
+                android:text="Reset"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:onClick="resetTheQuiz"/>
     </LinearLayout>
 </ScrollView>
